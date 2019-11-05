@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/ok8omk/VimComponent.git",
   "author": "tomoki-oke <tomoki.oke@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
