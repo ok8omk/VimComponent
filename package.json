@@ -17,6 +17,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@emotion/styled": "^10.0.23",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
