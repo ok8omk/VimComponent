@@ -1,5 +1,17 @@
 import * as React from "react";
+import styled from "@emotion/styled";
 
-export interface HelloProps { compiler: string; framework: string; }
+const Header = styled.h1`
+  color: black;
+`;
 
-export const Hello = (props: HelloProps) => <h1>Hello from {props.compiler} and {props.framework}!</h1>;
+export interface HelloProps {
+  compiler: string;
+  framework: string;
+}
+
+export const Hello = (props: HelloProps) => (
+  <Header>
+    Hello from {props.compiler} and {props.framework}!
+  </Header>
+);
