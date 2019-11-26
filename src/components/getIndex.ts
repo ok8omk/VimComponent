@@ -50,6 +50,17 @@ const backspace: IndexGetter = ({ value, mode, cursorIndex }) => {
   }
 };
 
+const nextWord: IndexGetter = ({ value, mode, cursorIndex }) => {
+  const pattern = /\s+\w/;
+  const match = pattern.exec(value.slice(cursorIndex, value.length));
+
+  if (match === null) {
+    return cursorIndex;
+  } else {
+    return match.index + cursorIndex + 1;
+  }
+};
+
 const getIndex = {
   right,
   left,
@@ -58,6 +69,7 @@ const getIndex = {
   append,
   endAppend,
   escape,
-  backspace
+  backspace,
+  nextWord
 };
 export default getIndex;

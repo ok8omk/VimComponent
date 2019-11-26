@@ -50,6 +50,9 @@ const normalReducer: React.Reducer<State, Action> = (state, action) => {
     case "l": {
       return { ...state, cursorIndex: getIndex.right(state) };
     }
+    case "w": {
+      return { ...state, cursorIndex: getIndex.nextWord(state) };
+    }
     default: {
       return state;
     }
