@@ -20,7 +20,6 @@ export const Window: React.FC = () => {
   const [state, dispatch] = useVi();
 
   const onKeyDown = (event: React.KeyboardEvent) => {
-    console.log(event.key);
     dispatch({ key: event.key });
   };
 

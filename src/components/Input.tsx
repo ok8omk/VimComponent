@@ -23,9 +23,17 @@ const ValueWithCursor: React.FC<Type> = ({ value, cursorIndex }) => {
     <>
       {Array.prototype.map.call(value, (x: string, index: number) => {
         if (index == cursorIndex) {
-          return <Cursor>{x}</Cursor>;
+          if (x == " ") {
+            return <Cursor>&nbsp;</Cursor>;
+          } else {
+            return <Cursor>{x}</Cursor>;
+          }
         } else {
-          return x;
+          if (x == " ") {
+            return <>&nbsp;</>;
+          } else {
+            return <>{x}</>;
+          }
         }
       })}
       {cursorIndex === value.length && <Cursor>&nbsp;</Cursor>}
