@@ -61,6 +61,17 @@ const nextWord: IndexGetter = ({ value, mode, cursorIndex }) => {
   }
 };
 
+const nextWORD: IndexGetter = ({ value, mode, cursorIndex }) => {
+  const pattern = /\s+\S/;
+  const match = pattern.exec(value.slice(0, value.length));
+
+  if (match === null) {
+    return cursorIndex;
+  } else {
+    return match.index + cursorIndex + 1;
+  }
+};
+
 const getIndex = {
   right,
   left,
@@ -70,6 +81,7 @@ const getIndex = {
   endAppend,
   escape,
   backspace,
-  nextWord
+  nextWord,
+  nextWORD
 };
 export default getIndex;
