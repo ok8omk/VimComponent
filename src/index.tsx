@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { Window } from "./components/Window";
+import { Vinput } from "./components/Vinput";
 
-ReactDOM.render(<Window />, document.getElementById("example"));
+ReactDOM.render(<Vinput />, document.getElementById("root"));
