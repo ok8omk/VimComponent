@@ -27,7 +27,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --hot --inline",
     "build": "webpack --mode production",
-    "examples": "gh-pages -d examples/dist -b master",
+    "examples": "gh-pages -d examples/dist -b master -a",
     "publish-demo": "yarn run build && yarn run deploy"
   }
 }

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
   template: path.join(__dirname, "examples/src/index.html"),
-  filename: "./index.html"
+  filename: "index.html"
 });
 
 module.exports = {
@@ -37,7 +37,7 @@ module.exports = {
     port: 9000
   },
   output: {
-    path: path.join(__dirname, "examples/dist"),
+    path: path.join(__dirname, "docs"),
     filename: "bundle.js"
   }
 };
