@@ -2,13 +2,16 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.join(__dirname, "examples/src/index.html"),
-  filename: "index.html"
+  template: path.join(__dirname, "docs/src/index.html"),
+  filename: "docs/index.html"
 });
 
 module.exports = {
   devtool: "source-map",
-  entry: path.join(__dirname, "examples/src/index.tsx"),
+  entry: {
+    dist: path.join(__dirname, "/src/index.tsx"),
+    docs: path.join(__dirname, "/docs/src/index.tsx")
+  },
   resolve: {
     extensions: [".ts", ".tsx", ".js"]
   },
@@ -32,12 +35,12 @@ module.exports = {
   },
   plugins: [htmlWebpackPlugin],
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, "docs"),
     compress: true,
     port: 9000
   },
   output: {
-    path: path.join(__dirname, "docs"),
-    filename: "bundle.js"
+    path: __dirname,
+    filename: "[name]/index.js"
   }
 };

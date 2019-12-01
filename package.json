@@ -2,7 +2,7 @@
   "name": "vinput",
   "version": "1.0.0",
   "description": "Vi like input component in React",
-  "main": "index.js",
+  "main": "dist/bundle.js",
   "repository": "https://github.com/ok8omk/VimComponent.git",
   "author": "ok8omk <tomoki.oke@gmail.com>",
   "license": "MIT",
@@ -27,7 +27,7 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --hot --inline",
     "build": "webpack --mode production",
-    "examples": "gh-pages -d examples/dist -b master -a -n",
+    "examples": "gh-pages -d examples -e docs -a -n -b master",
     "publish-demo": "yarn run build && yarn run deploy"
   }
 }
