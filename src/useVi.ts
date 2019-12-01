@@ -1,8 +1,8 @@
 import * as React from "react";
+import { Mode } from "./types";
 import getIndex from "./getIndex";
 import getValue from "./getValue";
 
-type Mode = "INSERT" | "NORMAL";
 type State = {
   value: string;
   mode: Mode;

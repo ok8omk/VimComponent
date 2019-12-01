@@ -1,11 +1,9 @@
 import * as React from "react";
 import styled from "@emotion/styled";
-
-type Mode = "INSERT" | "NORMAL";
+import { Mode } from "./types";
 
 type StatusType = {
   mode: Mode;
-  cursorIndex: number;
 };
 
 const StyledWrapper = styled.div`
@@ -15,6 +13,6 @@ const StyledWrapper = styled.div`
   background-color: #000;
 `;
 
-export const Status: React.FC<StatusType> = ({ mode, cursorIndex }) => {
+export const Status: React.FC<StatusType> = ({ mode }) => {
   return <StyledWrapper>--{mode}--</StyledWrapper>;
 };

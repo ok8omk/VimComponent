@@ -58,7 +58,7 @@ const Vinput: React.FC<Props> = ({
       fontFamilies={fontFamilies}
     >
       <Input name={name} value={state.value} cursorIndex={state.cursorIndex} />
-      <Status mode={state.mode} cursorIndex={state.cursorIndex} />
+      <Status mode={state.mode} />
     </Container>
   );
 };
