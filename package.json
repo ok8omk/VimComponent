@@ -28,7 +28,6 @@
   "scripts": {
     "dev": "webpack-dev-server --mode development --hot --inline",
     "build": "webpack --mode production",
-    "examples": "gh-pages -d examples -e docs -a -n -b master",
     "prepublishOnly": "yarn build"
   }
 }
