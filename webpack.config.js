@@ -1,10 +1,4 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.join(__dirname, "docs/src/index.html"),
-  filename: "docs/index.html"
-});
 
 module.exports = {
   devtool: "source-map",
@@ -33,7 +27,6 @@ module.exports = {
       }
     ]
   },
-  plugins: [htmlWebpackPlugin],
   devServer: {
     contentBase: path.join(__dirname, "docs"),
     compress: true,
