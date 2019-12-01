@@ -2,7 +2,7 @@
 
 ## Example
 
-[:octocat: Github pages](https://ok8omk.github.io/vinput)
+[:octocat: Github pages](https://ok8omk.github.io/Vinput)
 
 ## 現在実装済みの機能
 
