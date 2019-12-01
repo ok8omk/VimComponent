@@ -8,11 +8,15 @@ Vi like `<input>` Component.
 
 ## Component Interface
 
-- [Vinput]
-- @param {string} [name] Input name props.
-- @param {number} [width=500] Component width.
-- @param {number} [fontSize=24] Component font size.
-- @param {string} [fontFamilies=["Inconsolata"]] Component font families. monospace fonts are recommended.
+```js
+/**
+ * [Vinput]
+ * @param  {string} [name]                         Input name props.
+ * @param  {number} [width=500]                    Component width.
+ * @param  {number} [fontSize=24]                  Component font size.
+ * @param  {string} [fontFamilies=["Inconsolata"]] Component font families. monospace fonts are recommended.
+ */
+```
 
 ## Basic Usage
 
