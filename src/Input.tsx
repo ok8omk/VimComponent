@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from "@emotion/styled";
 
-type Type = {
+type ValueWithCursorProps = {
   value: string;
   cursorIndex: number;
 };
@@ -9,7 +9,6 @@ type Type = {
 const Wrapper = styled.div`
   width: 100%;
   height: 1em;
-  font-size: 24px;
 `;
 
 const Cursor = styled.span`
@@ -17,7 +16,10 @@ const Cursor = styled.span`
   color: #000;
 `;
 
-const ValueWithCursor: React.FC<Type> = ({ value, cursorIndex }) => {
+const ValueWithCursor: React.FC<ValueWithCursorProps> = ({
+  value,
+  cursorIndex
+}) => {
   if (value.length === 0) return <Cursor>&nbsp;</Cursor>;
   return (
     <>
@@ -41,10 +43,15 @@ const ValueWithCursor: React.FC<Type> = ({ value, cursorIndex }) => {
   );
 };
 
-export const Input: React.FC<Type> = ({ value, cursorIndex }) => {
+type Props = {
+  name: string;
+} & ValueWithCursorProps;
+
+export const Input: React.FC<Props> = ({ name, value, cursorIndex }) => {
   return (
     <Wrapper>
       <ValueWithCursor value={value} cursorIndex={cursorIndex} />
+      <input type="hidden" name={name} value={value} />
     </Wrapper>
   );
 };

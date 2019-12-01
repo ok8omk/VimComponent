@@ -10,9 +10,7 @@ type StatusType = {
 
 const StyledWrapper = styled.div`
   height: 1em;
-  font-size: 24px;
   color: #fff;
-  font-family: "Inconsolata", monospace;
   caret-color: #fff;
   background-color: #000;
 `;

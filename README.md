@@ -1,19 +1,41 @@
 # Vinput
 
+Vi like `<input>` Component.
+
 ## Example
 
 [:octocat: Github pages](https://ok8omk.github.io/Vinput)
 
-## 現在実装済みの機能
+## Component Interface
 
-### INSERT モード
+- [Vinput]
+- @param {string} [name] Input name props.
+- @param {number} [width=500] Component width.
+- @param {number} [fontSize=24] Component font size.
+- @param {string} [fontFamilies=["Inconsolata"]] Component font families. monospace fonts are recommended.
+
+## Basic Usage
+
+By default, this component uses Inconsolata font.
+Therefore append this link tag in head tag.
+
+```html
+<link
+  href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+  rel="stylesheet"
+/>
+```
+
+## Features
+
+### INSERT Mode
 
 |    キー    |      機能       |
 | :--------: | :-------------: |
 | 普通のキー |      入力       |
 |    ESC     | NORMAL モードへ |
 
-### NORMAL モード
+### NORMAL Mode
 
 | キー |             機能             |
 | :--: | :--------------------------: |
