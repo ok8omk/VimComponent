@@ -1,5 +1,9 @@
 # Vinput
 
+## Example
+
+[:octocat: Github pages](https://ok8omk.github.io/vinput)
+
 ## 現在実装済みの機能
 
 ### INSERT モード
