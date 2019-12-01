@@ -1,10 +1,10 @@
 {
-  "name": "Vinput",
+  "name": "vinput",
   "version": "1.0.0",
-  "description": "Vim Component in React",
+  "description": "Vi like input component in React",
   "main": "index.js",
   "repository": "https://github.com/ok8omk/VimComponent.git",
-  "author": "tomoki-oke <tomoki.oke@gmail.com>",
+  "author": "ok8omk <tomoki.oke@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^16.9.11",
