@@ -1,8 +1,8 @@
 # Vinput
 
-Vi like `<input>` Component.
+Vi like `<input>` React Component.
 
-## Example
+## Try it
 
 [:octocat: Github pages](https://ok8omk.github.io/Vinput)
 
@@ -18,7 +18,7 @@ Vi like `<input>` Component.
  */
 ```
 
-## Basic Usage
+## Font configuration
 
 By default, this component uses Inconsolata font.
 Therefore append this link tag in head tag.
@@ -30,27 +30,16 @@ Therefore append this link tag in head tag.
 />
 ```
 
-## Features
+If you wanna use another font, inject the font reference.
+Also you have to assign correspond font for Vinput arguments.
 
-### INSERT Mode
+## Usage Example
 
-|    キー    |      機能       |
-| :--------: | :-------------: |
-| 普通のキー |      入力       |
-|    ESC     | NORMAL モードへ |
-
-### NORMAL Mode
-
-| キー |             機能             |
-| :--: | :--------------------------: |
-|  h   |             左へ             |
-|  l   |             右へ             |
-|  \$  |             行末             |
-|  0   |             行頭             |
-|  i   |       INSERT モードへ        |
-|  I   |   行頭から INSERT モードへ   |
-|  a   | 次の文字から INSERT モードへ |
-|  A   |   行末から INSERT モードへ   |
-|  d   |            全消し            |
-|  w   |         次の word へ         |
-|  W   |         次の WORD へ         |
+```tsx
+<Vinput
+  name="email"
+  width={1024}
+  fontSize={18}
+  fontFamilies={["Noto", "Inconsolata"]}
+/>
+```
