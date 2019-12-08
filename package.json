@@ -1,6 +1,6 @@
 {
   "name": "@ok8omk/vinput",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vi like input component in React",
   "main": "dist/index.js",
   "repository": "https://github.com/ok8omk/VimComponent.git",
