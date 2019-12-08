@@ -6,6 +6,13 @@
   "repository": "https://github.com/ok8omk/VimComponent.git",
   "author": "ok8omk <tomoki.oke@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-compoment",
+    "input",
+    "vim"
+  ],
   "publishConfig": {
     "access": "public"
   },
